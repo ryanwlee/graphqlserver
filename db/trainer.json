@@ -1,0 +1,7 @@
+{
+  "trainers": [
+    { "name": "Ryan", "age": 14, "from": "Toronto" },
+    { "name": "Cynthia", "age": 12, "from": "Edmonton" },
+    { "name": "Daniel", "age": 13, "from": "Vancouver" }
+  ]
+}

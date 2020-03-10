@@ -1,0 +1,9 @@
+{
+  "pokemons": [
+    { "name": "Bulbasaur", "age": 2, "type": "plant", "trainer": "Ryan" },
+    { "name": "Caterpie", "age": 3, "type": "bug", "trainer": "Cynthia" },
+    { "name": "Charmander", "age": 1, "type": "fire", "trainer": "Cynthia" },
+    { "name": "Squirtle", "age": 2, "type": "water", "trainer": "Daniel" },
+    { "name": "Pikachu", "age": 2, "type": "electricity", "trainer": "Daniel" }
+  ]
+}
