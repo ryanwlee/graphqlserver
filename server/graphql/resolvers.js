@@ -8,10 +8,17 @@ const resolvers = {
       try {
         console.log("starting pokemons query");
 
+        const tempPokemons = {
+          pokemons: JSON.parse(JSON.stringify(pokemonDb.pokemons))
+        };
+        const tempTrainers = {
+          trainers: JSON.parse(JSON.stringify(trainerDb.trainers))
+        };
+
         let result = [];
-        pokemonDb.pokemons.map(p => {
+        tempPokemons.pokemons.map(p => {
           let t = { name: p.trainer, age: 0, from: "unknown" };
-          trainerDb.trainers.map(person => {
+          tempTrainers.trainers.map(person => {
             if (person.name === p.trainer) {
               t = person;
             }
@@ -34,6 +41,7 @@ const resolvers = {
         const result = {
           pokemons: JSON.parse(JSON.stringify(pokemonDb.pokemons))
         };
+
         const newPokemon = {
           name: args.name,
           age: args.age,
